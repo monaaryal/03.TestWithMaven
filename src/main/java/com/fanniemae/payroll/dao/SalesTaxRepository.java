@@ -2,7 +2,7 @@ package com.fanniemae.payroll.dao;
 
 import java.util.ArrayList;
 
-public abstract class SalesTaxRepository implements IQuery<String> {
+public class SalesTaxRepository implements IQuery<String> {
 
 	@Override
 	public ArrayList<String> findAll() {

@@ -2,7 +2,7 @@ package com.fanniemae.payroll.dao;
 
 import java.util.ArrayList;
 
-public abstract class ShoppingRepository implements IQuery<String> {
+public  class ShoppingRepository implements IQuery<String> {
 
 	@Override
 	public ArrayList<String> findAll() {
