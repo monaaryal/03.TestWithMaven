@@ -12,7 +12,7 @@ public class CarTest {
 		
 		int size =carRep.findMaps().size();
 		
-		assertTrue ("size is :'"+ size, size ==10);
+		assertTrue ("size is :'"+ size, size ==20);
 	}
 
 }
