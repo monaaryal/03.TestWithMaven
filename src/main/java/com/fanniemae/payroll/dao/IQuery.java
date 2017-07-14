@@ -10,5 +10,10 @@ public interface IQuery<T> {
 	{
 		return null;
 	}
+	
+	//added method return back  database in key
+	default public T findBykey (String key) {
+	return null;	
+	} 
 
 }
