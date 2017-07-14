@@ -1,12 +1,13 @@
 package com.fanniemae.payroll.driver;
 
 import java.sql.ResultSet;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.fanniemae.payroll.dao.AbstractSQLDAO;
 import com.fanniemae.payroll.dao.IQuery;
-import com.fanniemae.payroll.model.City;
+
 import com.fanniemae.payroll.model.Country;
 
 public class Countryrepository extends AbstractSQLDAO implements IQuery<Country>{
