@@ -23,8 +23,9 @@ public abstract class AbstractSQLDAO {
 		ds.setUrl("jdbc:mysql://localhost:3306/world?useSSL=false");
 
 	}
-
-	public void insert(String sqlStatement) {
+//-change insert if you want to insert
+	
+	public void modify(String sqlStatement) {
 
 		// try catch resource
 

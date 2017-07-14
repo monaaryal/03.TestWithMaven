@@ -9,7 +9,8 @@ public class DriverRegistrationRepository {
 		RegistrationRepository r =new RegistrationRepository();
 		
 		Registration t = new Registration(1000, "mona", "aryal", 25);
-		r.insert(t);
+		//r.insert(t);
+		r.delete(1000);
 		
 
 	}

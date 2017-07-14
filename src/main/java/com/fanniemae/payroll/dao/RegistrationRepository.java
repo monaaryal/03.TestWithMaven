@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import com.fanniemae.payroll.model.Registration;
 
-public class RegistrationRepository extends AbstractSQLDAO implements Imodify<Registration> {
+public class RegistrationRepository extends AbstractSQLDAO implements Imodify<Registration,Integer> {
 
 	@Override
 	protected void result(ResultSet rs) throws SQLException {
@@ -22,7 +22,15 @@ public class RegistrationRepository extends AbstractSQLDAO implements Imodify<Re
 		sql=sql.replace("_LNAME", t.getLastName());
 		sql=sql.replace("_AGE", t.getAge()+ "");
 		
-		super.insert(sql);
+		super.modify(sql);
+		
+	}
+
+	@Override
+	public void delete(Integer key) {
+		String sql = "delete from Registration where id ="+ key;
+		super.modify(sql);
+		
 		
 	}
 
